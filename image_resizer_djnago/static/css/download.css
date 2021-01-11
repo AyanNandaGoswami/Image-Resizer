@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 20px;
+}
+
+/* RESIZER SECTION */
+.resizer-section {
+    height: 100%;
+    width: 100%;
+}
+
+.main-form-cls {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(36, 144, 174), rgb(94, 18, 224));
+}
+
+.main-form-cls .form-cls {
+    width: 450px;
+    height: 400px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+.download-logo {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+
+.download-para {
+    margin-top: 30px;
+    font-size: 100%;
+}
+
+.back-logo {
+    height: 40px;
+    width: 40px;
+    margin-top: 60px;
+}

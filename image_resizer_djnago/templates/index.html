@@ -11,14 +11,41 @@
 
     <!-- static css file -->
     <link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/qurees.css' %}"> 
 
-    <!-- static js file -->
-    <link rel="stylesheet" href="{% static 'js/index.js' %}"> 
-    
     <title>Image Resizer</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+    <section class="resizer-section">
+      <div class="main-form-cls">
+        <form action="{% url 'save_data' %}" method="POST" enctype="multipart/form-data" class="form-cls">
+          {% csrf_token %}
+          <div class="inner-form">
+            <div class="form-hedaer">
+              <h1>Image Resizer</h1>
+            </div>
+            <div class="dimension">
+              <h2>Enter the Dimention<span style="color: orange;">*</h2>
+              <div class="inner-dimension">
+                <input type="number" name="width" placeholder="Width" class="width" id="width-id" required>
+                <label class="cross">+</label>
+                <input type="number" name="height" placeholder="Height" class="height" id="height-id" required>
+              </div>
+              <div class="choose-image">
+                <h2>Select image<span style="color: orange;">*</h2>
+                <div class="choose-image-inner">
+                  <input type="file" name="img" class="img-file" id="img-id" required>
+                </div>
+              </div>
+              <div class="resize-btn">
+                <input type="submit" name="resize" value="Resize" class="btn" id="resize-btn-id" onclick="Resize()">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
     
     <!-- Bootstrap js -->

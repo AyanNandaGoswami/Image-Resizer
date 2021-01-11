@@ -1,0 +1,153 @@
+
+/* big tablets to 1200px */
+@media only screen and (max-width: 1200px) {
+    
+}
+
+
+/* small tablet to big tablet: 768px to 1024px */
+@media only screen and (max-width: 1024px) {
+    h2 { font-size: 90%; }
+
+    .main-form-cls .form-cls {
+        width: 400px;
+        height: 350px;
+    }
+
+    .inner-form .form-hedaer h1 { font-size: 110%; }
+    
+    .width { font-size: 90%; }
+    
+    .height { font-size: 90%; }
+
+    .inner-form .choose-image .choose-image-inner { font-size: 90%; } 
+    
+    
+    .resize-btn { margin-top: 40px; }
+    
+    .btn {
+        padding: 6px 30px;
+        font-size: 90%;
+    }   
+
+    
+    /* ------------------ */
+    /* DOWNLOAD PAGE */
+    /* -------------------- */
+    .download-logo {
+        height: 90px;
+        width: 90px;
+        margin-top: 35px;
+    }
+    
+    .download-para {
+        margin-top: 30px;
+        font-size: 90%;
+    }
+    
+    .back-logo {
+        height: 35px;
+        width: 35px;
+        margin-top: 60px;
+    }
+}
+
+
+/* small phones to small tablets: 481px to 768px */
+@media only screen and (max-width: 768px) {
+    h2 { font-size: 80%; }
+
+    .main-form-cls .form-cls {
+        width: 350px;
+        height: 320px;
+    }
+
+    .inner-form .form-hedaer h1 { font-size: 100%; }
+    
+    .width { font-size: 80%; }
+    
+    .height { font-size: 80%; }
+
+    .inner-form .choose-image .choose-image-inner { font-size: 80%; } 
+    
+    .resize-btn { margin-top: 35px; }
+    
+    .btn {
+        padding: 6px 30px;
+        font-size: 80%;
+    }  
+    
+    
+    /* ------------------ */
+    /* DOWNLOAD PAGE */
+    /* -------------------- */
+    .download-logo {
+        height: 80px;
+        width: 80px;
+        margin-top: 30px;
+    }
+    
+    .download-para {
+        margin-top: 25px;
+        font-size: 80%;
+    }
+    
+    .back-logo {
+        height: 30px;
+        width: 30px;
+        margin-top: 70px;
+    }
+}
+
+
+/* small phones: 0 to 480px */
+@media only screen and (max-width: 480px) {
+    h2 { font-size: 70%; }
+
+    .inner-form .form-hedaer h1 { font-size: 90%; }
+
+    .main-form-cls .form-cls {
+        width: 90%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    .inner-form .dimension { margin-top: 25px; }
+
+    .width { font-size: 70%; }
+    
+    .height { font-size: 70%; }
+
+    .inner-form .choose-image { margin-top: 25px; }
+
+    .inner-form .choose-image .choose-image-inner { font-size: 70%; } 
+
+    .resize-btn { margin-top: 30px; }
+
+    .btn {
+        padding: 5px 25px;
+        font-size: 70%;
+    }  
+
+
+    /* ------------------ */
+    /* DOWNLOAD PAGE */
+    /* -------------------- */
+    .download-logo {
+        height: 80px;
+        width: 80px;
+        margin-top: 30px;
+    }
+    
+    .download-para {
+        margin-top: 25px;
+        font-size: 80%;
+    }
+    
+    .back-logo {
+        height: 30px;
+        width: 30px;
+        margin-top: 70px;
+    }
+}
+
