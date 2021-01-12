@@ -46,6 +46,8 @@ def save_data(request):
     img_obj = ImageResizerClass.objects.get(id=id)
     temp = img_obj
 
+
+
     # delete object from database
     img_obj.delete()
 
