@@ -6,7 +6,6 @@ import sys
 from io import BytesIO
 import os
 import cv2
-from image_resizer_djnago.settings import MEDIA_ROOT
 
 path = ""
 
@@ -22,7 +21,7 @@ def save_data(request):
     # delete image
     if path != "":
         os.remove(path)
-
+        
     # collect the data
     height = request.POST['height']
     width = request.POST['width']
@@ -32,12 +31,10 @@ def save_data(request):
     x = ImageResizerClass.objects.create(image=img)
 
     # gobal path
-    path = "{}/{}".format(MEDIA_ROOT, x.image)
-    print(path)
+    path = 'media/{}'.format(x.image)
     
     # resize image
     imgs = cv2.imread(path)
-    print(imgs)
     imgs = cv2.resize(imgs,(int(width),int(height)))
     cv2.imwrite(path,imgs)
 
@@ -45,7 +42,7 @@ def save_data(request):
     id = x.id
     img_obj = ImageResizerClass.objects.get(id=id)
     temp = img_obj
-
+    
     # delete object from database
     img_obj.delete()
 
@@ -54,7 +51,7 @@ def save_data(request):
     #output_size = (200, 200)
     #imgs.thumbnail(output_size)
     #imgs = imgs.convert('RGB')
-
+    
     # #output = BytesIO()
     # imgs.save(output, format='JPEG')
     # output.seek(0)
@@ -65,5 +62,5 @@ def save_data(request):
     #                                         None)
 
 
-
+    
     return render(request, 'download.html', {'img': temp})
